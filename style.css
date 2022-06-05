@@ -86,12 +86,27 @@ section {
 
 section.hero {
   background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.3)
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0)
     ),
     url('https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+section.hero h1 {
+  line-height: 3.7rem;
+  margin-left: 40px;
+}
+
+section.hero h1 .losangeles {
+  font-size: 6rem;
+  color: var(--tertiary-color);
+}
+
+section.hero h1 .mountains {
+  font-size: 6.4rem;
+  color: var(--primary-color);
 }
