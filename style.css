@@ -32,6 +32,12 @@ body {
   align-items: center;
 }
 
+.background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
 h1,
 h2 {
   font-family: var(--heading-font);
@@ -43,6 +49,7 @@ header {
   left: 0;
   width: 100%;
   padding: 20px 0;
+  background-color: var(--base-color);
 }
 
 header.unscrolled {
@@ -86,9 +93,6 @@ section {
 
 section.hero {
   background-image: url('https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 section.hero h1 {
@@ -105,4 +109,48 @@ section.hero h1 .losangeles {
 
 section.hero h1 .mountains {
   font-size: 6.45rem;
+}
+
+section.history {
+  background-image: url('https://images.unsplash.com/photo-1611605645802-c21be743c321?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section.history h2 {
+  margin-top: 60px;
+}
+
+section.history h2 span.numeral {
+  font-size: 9rem;
+  color: var(--secondary-color);
+}
+
+section.history h2 span.title {
+  display: inline-block;
+  font-size: 2.8rem;
+  color: var(--primary-color);
+  transform: translate(-24px, -29px);
+}
+
+section.history p {
+  margin-left: 80px;
+  transform: translateY(-35px);
+}
+
+section.history .carousel {
+  background: rgba(67, 78, 108, 0.8);
+  padding: 20px 0;
+}
+
+section.history .carousel .container {
+  display: flex;
+  overflow: hidden;
+  gap: 10px;
+}
+
+section.history .carousel img {
+  max-width: 200px;
 }
