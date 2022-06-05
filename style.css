@@ -26,6 +26,12 @@ body {
   margin: 0 auto;
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 h1,
 h2 {
   font-family: var(--heading-font);
@@ -56,9 +62,6 @@ header nav .logo {
   height: 40px;
   background: var(--base-color);
   border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 header nav ul {
