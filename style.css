@@ -38,8 +38,13 @@ body {
   background-position: top;
 }
 
+.hide {
+  display: none;
+}
+
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--heading-font);
 }
 
@@ -97,7 +102,6 @@ section.hero {
 
 section.hero h1 {
   line-height: 3.7rem;
-  margin-left: 40px;
   color: var(--base-color);
   font-weight: normal;
   letter-spacing: 0.17rem;
@@ -153,4 +157,104 @@ section.history .carousel .container {
 
 section.history .carousel img {
   max-width: 200px;
+}
+
+/************************
+  CLIMB
+  *******************/
+
+section.climb {
+  overflow: hidden;
+}
+
+section.climb .about {
+  background-color: var(--base-color);
+  padding: 5px 0;
+}
+
+section.climb .about > .container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+section.climb .about h2 {
+  display: flex;
+  align-items: center;
+}
+
+section.climb .about h2 span.numeral {
+  font-size: 9rem;
+  color: var(--secondary-color);
+}
+
+section.climb .about h2 span.title {
+  display: inline-block;
+  font-size: 2.8rem;
+  color: var(--primary-color);
+  transform: translate(-24px, 5px);
+}
+
+section.climb .schedules .climb-nav {
+  background-color: var(--primary-color);
+}
+
+section.climb .schedules .climb-nav ul {
+  list-style-type: none;
+  display: flex;
+  font-family: var(--heading-font);
+  color: var(--secondary-color);
+}
+
+section.climb .schedules .climb-nav ul li {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  padding: 5px 15px;
+}
+
+section.climb .schedules .climb-nav ul li:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+section.climb .schedules .mountain1,
+section.climb .schedules .mountain2 {
+  height: calc(100vh - 10px - 10rem);
+}
+
+section.climb .mountain1 {
+  background-image: url('https://images.unsplash.com/photo-1486284847143-bfb9308a3f17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80');
+  background-position: center;
+  overflow: hidden;
+}
+
+section.climb .mountain2 {
+  background-image: url('https://images.unsplash.com/photo-1512273222628-4daea6e55abb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+  overflow: hidden;
+}
+
+section.climb .schedules .schedule {
+  margin-top: 60px;
+  width: min(90%, 300px);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 15px 30px;
+}
+
+section.climb .schedules .schedule h3 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+section.climb .schedules .schedule .journey {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+section.climb .schedules .schedule .journey > div {
+  display: flex;
+  justify-content: space-between;
 }
