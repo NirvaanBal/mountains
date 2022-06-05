@@ -258,3 +258,35 @@ section.climb .schedules .schedule .journey > div {
   display: flex;
   justify-content: space-between;
 }
+
+/************************
+FOOTER
+*****************/
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 25px 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .logo {
+  border: solid 2px var(--base-color);
+  border-radius: 50px;
+  padding: 10px;
+}
+
+footer p {
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+footer p a {
+  color: inherit;
+}
