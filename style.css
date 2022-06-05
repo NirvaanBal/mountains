@@ -9,6 +9,12 @@
 :root {
   --base-font: 'Montserrat', sans-serif;
   --heading-font: 'Bebas Neue', sans-serif;
+
+  --text-color: #fff;
+  --base-color: #000;
+  --primary-color: rgb(67, 78, 108);
+  --secondary-color: rgb(162, 168, 184);
+  --tertiary-color: rgb(79, 79, 79);
 }
 
 body {
