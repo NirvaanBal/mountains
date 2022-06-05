@@ -10,8 +10,8 @@
   --base-font: 'Montserrat', sans-serif;
   --heading-font: 'Bebas Neue', sans-serif;
 
-  --text-color: #fff;
-  --base-color: #000;
+  --text-color: #000;
+  --base-color: #fff;
   --primary-color: rgb(67, 78, 108);
   --secondary-color: rgb(162, 168, 184);
   --tertiary-color: rgb(79, 79, 79);
@@ -29,4 +29,66 @@ body {
 h1,
 h2 {
   font-family: var(--heading-font);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+}
+
+header.unscrolled {
+  background-color: transparent;
+}
+
+header nav {
+  width: min(90%, 960px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .logo {
+  width: 40px;
+  height: 40px;
+  background: var(--base-color);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  text-transform: uppercase;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--base-color);
+  font-size: 0.8rem;
+  padding-bottom: 2px;
+  border-bottom: solid 1px var(--base-color);
+  font-style: italic;
+}
+
+section {
+  height: 100vh;
+}
+
+section.hero {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url('https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
