@@ -99,7 +99,7 @@ header nav ul li a {
 
 section {
   height: 100vh;
-  transition: opacity 0.4s;
+  transition: opacity 0.8s;
   opacity: 0;
 }
 
