@@ -7,8 +7,9 @@ function observation(style, options) {
   return new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if ([...entry.target.classList].includes('hero')) {
-        header.classList.toggle('unscrolled');
+        header.classList.toggle('scrolled');
         options.threshold = 1;
+        options.rootMargin = '-140px';
       }
       entry.target.classList.toggle(style, entry.isIntersecting);
     });
