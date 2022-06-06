@@ -1,6 +1,6 @@
 # LA Mountains
 
-Landing page of LosAngeles Mountains
+Landing page of Los Angeles Mountains. [Live Here](https://nirvaanbal.github.io/mountains/).
 
 ## Features
 
@@ -17,5 +17,5 @@ Landing page of LosAngeles Mountains
 
 ## Assets
 
-Font - [Google Fonts](https://fonts.google.com)
-Images - [Unsplash](https://unsplash.com)
+- Font - [Google Fonts](https://fonts.google.com)
+- Images - [Unsplash](https://unsplash.com)
