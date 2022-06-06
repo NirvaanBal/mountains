@@ -1,16 +1,12 @@
 const header = document.querySelector('header');
 const sections = document.querySelectorAll('section');
+const hero = document.querySelector('section.hero');
 const footer = document.querySelector('footer');
 const mountainNavItems = document.querySelectorAll('.climb nav li');
 
 function observation(style, options) {
   return new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      if ([...entry.target.classList].includes('hero')) {
-        header.classList.toggle('scrolled');
-        options.threshold = 1;
-        options.rootMargin = '-140px';
-      }
       entry.target.classList.toggle(style, entry.isIntersecting);
     });
   }, options);
@@ -21,6 +17,18 @@ sections.forEach((section) => {
 });
 
 observation('reveal', { threshold: 0.5 }).observe(footer);
+
+// observer only for nav
+const heroObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      header.classList.toggle('scrolled');
+    });
+  },
+  { rootMargin: '-300px' }
+);
+
+heroObserver.observe(hero);
 
 mountainNavItems.forEach((item) => {
   item.addEventListener('click', (e) => {
