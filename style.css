@@ -126,6 +126,10 @@ section.hero h1 .mountains {
   font-size: 6.45rem;
 }
 
+/********************
+  HISTORY
+  **************/
+
 section.history {
   background-image: url('https://images.unsplash.com/photo-1611605645802-c21be743c321?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
   overflow: hidden;
@@ -306,4 +310,36 @@ footer p {
 
 footer p a {
   color: inherit;
+}
+
+/****************************
+  MEDIA QUERIES
+  *****************/
+@media (max-width: 499px) {
+  section.hero h1 {
+    line-height: 2.7rem;
+  }
+
+  section.hero h1 .losangeles {
+    font-size: 4rem;
+  }
+
+  section.hero h1 .mountains {
+    font-size: 4.33rem;
+  }
+
+  section.history p {
+    background: rgba(255, 255, 255, 0.7);
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  section.climb .about {
+    margin-bottom: 20px;
+  }
+
+  section.climb .about > .container {
+    flex-wrap: wrap;
+    gap: 0;
+  }
 }
