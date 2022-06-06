@@ -161,13 +161,17 @@ section.history .carousel {
 }
 
 section.history .carousel .container {
-  display: flex;
   overflow: hidden;
+}
+
+section.history .carousel .container .images {
+  display: flex;
   gap: 10px;
+  transition: transform 0.3s;
 }
 
 section.history .carousel img {
-  max-width: 200px;
+  width: calc(960px / 4 - 10px);
 }
 
 /************************

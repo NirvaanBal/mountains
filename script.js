@@ -2,8 +2,6 @@ const header = document.querySelector('header');
 const sections = document.querySelectorAll('section');
 const footer = document.querySelector('footer');
 const mountainNavItems = document.querySelectorAll('.climb nav li');
-// const mountain1 = document.getElementById('m1')
-// const mountain2=
 
 function observation(style, options) {
   return new IntersectionObserver((entries) => {
@@ -40,3 +38,22 @@ mountainNavItems.forEach((item) => {
     }
   });
 });
+
+function carvan(duration) {
+  let initial = 0,
+    begin = 0;
+  let allImages = document.querySelectorAll('.images img').length;
+  const carousel = document.querySelector('.carousel .images');
+
+  setInterval(() => {
+    if (begin === allImages - 3) {
+      initial = 0;
+      begin = 0;
+    }
+    carousel.style.transform = `translateX(-${initial}px)`;
+    initial += 960 / 4;
+    begin++;
+  }, duration);
+}
+
+carvan(1000);
